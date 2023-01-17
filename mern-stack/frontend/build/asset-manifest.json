@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ca1a3c7.css",
+    "main.js": "/static/js/main.6a821295.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/rug.jpg": "/static/media/rug.ee7be726af703625e21a.jpg",
+    "static/media/tennis.jpg": "/static/media/tennis.5a82c1c9e7dde8623512.jpg",
+    "static/media/proTime.jpg": "/static/media/proTime.2d346cc99f1ad3313a60.jpg",
+    "static/media/Balls.jpg": "/static/media/Balls.08199e2a504f5a199f1f.jpg",
+    "static/media/athle.jpg": "/static/media/athle.a42b9d53aba10c805f61.jpg",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.c1d7432ee75fa194e499.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
+    "index.html": "/index.html",
+    "main.4ca1a3c7.css.map": "/static/css/main.4ca1a3c7.css.map",
+    "main.6a821295.js.map": "/static/js/main.6a821295.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ca1a3c7.css",
+    "static/js/main.6a821295.js"
+  ]
+}
