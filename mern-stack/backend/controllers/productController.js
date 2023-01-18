@@ -21,7 +21,11 @@ const getProducts = async (req, res, next) => {
     const categoryName = req.params.categoryName || "";
     if (categoryName) {
       queryCondition = true;
-      let a = categoryName.replaceAll(',', '/');
+      console.log(categoryName);
+      // let a = categoryName.replaceAll(',', '/');
+       let a = categoryName.replace(/,./g, '/');
+
+      console.log("ab", a);
       var regEx = new RegExp("^" + a);
       categoryQueryCondition = { category: regEx };
     }
