@@ -30,7 +30,7 @@ const  ProductCarouselComponent = ({ bestSellers }) => {
                 <Carousel.Item key={idx}>
                 <img
               crossOrigin="anonymous"
-              className="d-block    "
+              className="d-block img-fluid   "
               style={{
                 height: "400px",
                 objectFit: "cover",
@@ -50,7 +50,7 @@ const  ProductCarouselComponent = ({ bestSellers }) => {
                   style={cursorP}
                   to={`/product-details/${item._id}`}
                 >
-                  <h3 className="fontDesign ">
+                  <h3 className="fontDesign " style={{fontSize:"2vw;"}} >
                     Bestseller in {item.category} Category
                   </h3>
                 </LinkContainer>

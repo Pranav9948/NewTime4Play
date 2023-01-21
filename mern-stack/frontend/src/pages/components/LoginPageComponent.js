@@ -66,10 +66,10 @@ const LoginPageComponent = ({
     <div className="loginPage">
       <div className="d-flex flex-row mt-2  centers">
         <i
-          class="fa-solid fa-trophy"
-          style={{ fontSize: "50px", color: "yellow" }}
+          class="fa-solid fa-trophy trophys"
+          style={{  color: "yellow" }}
         ></i>
-        <span className="h1 fw-bold mb-3 ms-3" style={{ color: "darkorange" }}>
+        <span className="h1 fw-bold mb-3 ms-3 loginHead" style={{ color: "darkorange" }}>
           TIME TO PLAY
         </span>
       </div>
@@ -87,7 +87,7 @@ const LoginPageComponent = ({
         <Col md={1}></Col>
 
         <Col md={6}>
-          <Card.Body className="d-flex flex-column mt-4">
+          <Card.Body className="d-flex flex-column mt-4 loginColumn">
             <h2 className="mt-3">
               {" "}
               <span>

@@ -75,7 +75,7 @@ console.log("hello");
           <AdminLinksComponent />
         </Col>
 
-        <Col md={7} className="m-5">
+        <Col md={7} className="m-5 couponCreate">
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Name</Form.Label>

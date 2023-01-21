@@ -12,7 +12,7 @@ const  RemoveFromCartComponent = ({ productID, orderCreated, quantity, price, re
        variant="secondary"
        onClick={removeFromCartHandler ? () => removeFromCartHandler(productID, quantity, price) : undefined}
        >
-         <i className="bi bi-trash"></i>  
+         <i className="bi bi-trash deleteicon"></i>  
        </Button>  
     )
 }

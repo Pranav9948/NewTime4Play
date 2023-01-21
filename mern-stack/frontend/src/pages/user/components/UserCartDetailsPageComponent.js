@@ -182,13 +182,13 @@ const removeAppliedCoupon=async()=>{
   return (
     <Container fluid>
       <Row className="mt-5 ms-3 me-3">
-        <h2>Cart Details</h2>
+        <h2 className="cartdetailsname">Cart Details</h2>
 
         <Col md={8}>
           <br />
           <Row>
             <Col md={6}>
-              <Col>
+              <Col className="delivery">
                 <LinkContainer to="/user">
                   <Button
                     className="mt-2 mb-4 ms-3"
@@ -200,7 +200,7 @@ const removeAppliedCoupon=async()=>{
                   </Button>
                 </LinkContainer>
               </Col>
-              <h2 className="ms-2">Shipping</h2>
+              <h2 className="ms-2 ship">Shipping</h2>
 
               <ListGroup className="p-2 ms-1">
                 <ListGroup.Item>
@@ -218,7 +218,7 @@ const removeAppliedCoupon=async()=>{
               </ListGroup>
             </Col>
 
-            <Col md={6}>
+            <Col md={6} className="paymentMethod">
               <h2 style={{ marginTop: "-70px" }} className="ms-0 mb-5">
                 {" "}
                 Select Payment Method
@@ -226,7 +226,7 @@ const removeAppliedCoupon=async()=>{
               <Form.Select
                 onChange={choosePayment}
                 style={{ width: "60%" }}
-                className="ms-4"
+                className="ms-4 formx"
               >
                 <option value="pp">PayPal</option>
                 <option value="cod">
@@ -260,7 +260,9 @@ const removeAppliedCoupon=async()=>{
           </ListGroup>
         </Col>
         <Col md={4}>
-          <h2 style={{ marginTop: "-50px" }}>Order summary</h2>
+          <h2 style={{ marginTop: "-50px" }} className="orderSum">
+            Order summary
+          </h2>
           <ListGroup className="mt-4 ms-2">
             <ListGroup.Item>
               Items price (after tax):{" "}
@@ -303,7 +305,7 @@ const removeAppliedCoupon=async()=>{
             </ListGroup.Item>
           </ListGroup>
           <br></br> <br></br>
-          <ListGroup>
+          <ListGroup className="couponApply">
             <ListGroup.Item className="p-3">
               <Button size="lg" type="button" onClick={applyForCoupon}>
                 Apply for a coupon

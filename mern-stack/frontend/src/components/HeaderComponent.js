@@ -143,6 +143,7 @@ const HeaderComponent = () => {
                   <Nav.Link disabled>
                     <Badge pill bg="warning">
                       
+                     { console.log("num",FavProducts.length) }
                       {FavProducts.length}
                     </Badge>
 

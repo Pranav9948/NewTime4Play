@@ -5,8 +5,6 @@ const CartItemComponent = ({ item, removeFromCartHandler = false, orderCreated =
   return (
     <>
       <ListGroup.Item>
-
-        
         <Row>
           <Col md={2}>
             <Image
@@ -15,9 +13,13 @@ const CartItemComponent = ({ item, removeFromCartHandler = false, orderCreated =
               fluid
             />
           </Col>
-          <Col md={2}>{item.name}</Col>
-          <Col md={2}>
-            <b>₹{item.price}*{item.quantity}</b>
+          <Col md={2} className="itemname">
+            {item.name}
+          </Col>
+          <Col md={2} className="itemprice">
+            <b>
+              ₹{item.price}*{item.quantity}
+            </b>
           </Col>
           <Col md={3}>
             <Form.Select

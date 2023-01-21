@@ -63,11 +63,11 @@ const CartPageComponent = ({
     <Container fluid>
       <Row className="mt-4 ms-3 me-3">
         <Col md={8}>
-          <h1 className="mt-3 mb-5">Shopping Cart</h1>
+          <h1 className="mt-3 mb-5 cartname">Shopping Cart</h1>
           {cartItems.length === 0 ? (
             <Alert variant="info">Your cart is empty</Alert>
           ) : (
-            <ListGroup variant="flush">
+            <ListGroup variant="flush ">
               {cartItems.map((item, idx) => (
                 <CartItemComponent
                   item={item}

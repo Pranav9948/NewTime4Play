@@ -30,7 +30,7 @@ const OrdersPageComponent = ({ getOrders }) => {
       <Col md={1}></Col>
 
       <Col md={9}>
-        <h1>Orders</h1>
+        <h1 className="orderAdmin">Orders</h1>
         <Table striped bordered hover responsive className="mt-4">
           <thead>
             <tr>

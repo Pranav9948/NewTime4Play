@@ -150,3 +150,149 @@ footer {
   height: 220px;
   
 }
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 801px) {
+   .fontDesign{
+    font-size: 50px;
+ 
+  }
+     .trophys{
+    font-size: 50px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 800px) {
+  .fontDesign {
+    font-size: 30px;
+  }
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 500px) {
+  .fontDesign {
+    font-size: 25px;
+  
+  }
+
+  .cartname{
+
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 50px;
+  }
+
+  .itemname{
+
+    margin-top: 20px;
+     margin-bottom: 20px;
+     font-size: 20px;
+  }
+
+  .itemprice{
+
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .loginHead{
+
+    font-size:17px;
+    
+    
+    
+  
+  }
+
+  .trophys{
+    font-size: 20px;
+  }
+
+  .loginColumn{
+
+    align-items: center;
+  }
+  
+
+  .cartdetailsname{
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .paymentMethod{
+
+    margin-top: 90px;
+    text-align: center;
+  }
+
+  .ordersum{
+
+    margin-top: 70px;
+  }
+
+  .delivery{
+
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .ship{
+
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .formx{
+
+     align-items: center;
+
+  }
+
+  .orderSum{
+
+    margin-top: 120px;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .coupon{
+
+    text-align: center;
+  }
+
+  .orderAdmin{
+
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .newProduct{
+
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+  }
+
+  .userslist{
+
+     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .graph{
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+  }
+  .couponCreate{
+
+    width: 80%;
+  }
+}

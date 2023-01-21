@@ -160,7 +160,7 @@ const AnalyticsPageComponent = ({
       </Col>
       <Col md={10}>
         <Container>
-          <Form.Group controlId="firstDateToCompare">
+          <Form.Group controlId="firstDateToCompare graph">
             <Form.Label>Select First Date To Compare</Form.Label>
             <Form.Control
               onChange={firstDateHandler}

@@ -1,6 +1,7 @@
 import { Row, Col, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { clearCart } from "../../../redux/actions/cartActions";
 
 const UserOrdersPageComponent = ({getOrders}) => {
     const [orders, setOrders] = useState([]);
@@ -12,11 +13,11 @@ const UserOrdersPageComponent = ({getOrders}) => {
     }, [])
 
 
+useEffect(()=>{
 
-    const clearCart=()=>{
-
-
-    }
+  clearCart()
+},[])
+    
 
   return (
     <Row className="m-5">

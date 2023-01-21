@@ -41,7 +41,7 @@ const UsersPageComponent = ({ fetchUsers, deleteUser }) => {
       </Col>
       <Col></Col>
       <Col md={9}>
-        <h1 className="mt-3">User List</h1>
+        <h1 className="mt-3 userslist">User List</h1>
         <Table striped bordered hover responsive className="mt-5">
           <thead>
             <tr>

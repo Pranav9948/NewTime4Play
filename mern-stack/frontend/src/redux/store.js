@@ -9,12 +9,14 @@ import { addToWishlistReducer } from "./reducers/wishListReducer";
 import { applyCouponReducer } from "./reducers/couponReducer";
 
 
+
 const reducer = combineReducers({
   cart: cartReducer,
   userRegisterLogin: userRegisterLoginReducer,
   getCategories: getCategoriesReducer,
   wishList: addToWishlistReducer,
   Discount: applyCouponReducer,
+
 });
 
 const cartItemsInLocalStorage = localStorage.getItem("cart")

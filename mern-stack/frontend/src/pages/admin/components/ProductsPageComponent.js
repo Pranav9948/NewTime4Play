@@ -41,7 +41,7 @@ const ProductsPageComponent = ({ fetchProducts, deleteProduct }) => {
       </Col>
       <Col md={1}></Col>
       <Col md={9}>
-        <h1>
+        <h1 className="newProduct">
           Product List{" "} <span className="ms-4"></span>
           <LinkContainer to="/admin/create-new-product">
             <Button variant="primary" size="lg">

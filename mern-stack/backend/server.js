@@ -11,7 +11,7 @@ const fileUpload = require("express-fileupload");
 const cookieParser = require("cookie-parser");
 
 const app = express();
-const port = 5000;
+
 
 const httpServer = createServer(app);
 global.io = new Server(httpServer);

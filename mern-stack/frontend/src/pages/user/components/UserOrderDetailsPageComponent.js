@@ -13,6 +13,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import {clearCart} from '../../../redux/actions/cartActions'
 
 const UserOrderDetailsPageComponent = ({
   userInfo,
@@ -38,7 +39,7 @@ const UserOrderDetailsPageComponent = ({
   console.log("pp",priceAfterDiscount)
 const cartz = useSelector((state) => state.cart.cartSubtotal);
 
-  console.log("joel",cartz)
+  
 
   const { id } = useParams();
 
@@ -85,7 +86,8 @@ const cartz = useSelector((state) => state.cart.cartSubtotal);
 
   const orderHandler = () => {
 
-    
+
+    dispatch (clearCart())
     setButtonDisabled(true);
     if (paymentMethod === "pp") {
       setOrderButtonMessage(
@@ -101,6 +103,8 @@ const cartz = useSelector((state) => state.cart.cartSubtotal);
     }
 
   };
+
+
 
  
 
@@ -180,7 +184,7 @@ const cartz = useSelector((state) => state.cart.cartSubtotal);
                   style={{ width: "70%" }}
                 >
                   {isPaid ? (
-                    <>Paid on {isPaid}</>
+                    <>Paid on {isPaid.substring(0, 10)}</>
                   ) : (
                     <> Payment-Method : {paymentMethod}</>
                   )}
@@ -244,7 +248,7 @@ const cartz = useSelector((state) => state.cart.cartSubtotal);
 
               {orderSuccess ? (
                 <>
-                  
+                  {clearCart()}
                   {localStorage.removeItem("cart")}
                   <h2 className="mt-4" style={{ color: "green" }}>
                     Order Placed Successfully{" "}
